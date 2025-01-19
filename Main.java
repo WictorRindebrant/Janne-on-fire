@@ -17,7 +17,7 @@ public class Main {
         CardShow cardShow = new CardShow();
         String[] clear_command = {"cmd.exe", "/c", ""};
         if(checkShell() == "Linux" || checkShell() == "Mac") {
-            clear_command[2] = "clear && \"/bin/bash\", \"-c\", \"export LANG=en_US.UTF-8 > /dev/null && export LC_ALL=en_US.UTF-8 > /dev/null";
+            clear_command[2] = "clear && chcp 65001 > NUL";
         } else {
             clear_command[2] = "cls && chcp 65001 > NUL";
         }
