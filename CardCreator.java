@@ -42,14 +42,14 @@ public class CardCreator {
 
 
     private CardDeck createCard(int number, String color, String title, String desc, CardDeck deck) {
-        Card card1 = new Card("1", "", "");
-        Card card2 = new Card("1", "", "");
+        Card card1 = new Card("1", "" , "", "");
+        Card card2 = new Card("1", "", "", "");
         if(color.equals("Red")) {
-            card1 = new Card(String.valueOf(number), "Heart",desc);
-            card2 = new Card(String.valueOf(number), "Square",desc);
+            card1 = new Card(String.valueOf(number), "Heart", title, desc);
+            card2 = new Card(String.valueOf(number), "Square", title, desc);
         } else if(color.equals("Black")) {
-            card1 = new Card(String.valueOf(number), "Clove",desc);
-            card2 = new Card(String.valueOf(number), "Spade",desc);
+            card1 = new Card(String.valueOf(number), "Clove", title, desc);
+            card2 = new Card(String.valueOf(number), "Spade", title, desc);
         }
         deck.addCard(card1);
         deck.addCard(card2);

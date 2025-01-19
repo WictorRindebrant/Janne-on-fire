@@ -8,6 +8,7 @@ public class CardShow {
         System.out.printf("│      %2s │\n", card.getSuit()); // Bottom-right rank
         System.out.printf("│      %2s │\n", card.getRank()); // Bottom-right rank
         System.out.println("└─────────┘" + "\033[0m");
-        System.out.println("Card Desc: " + card.getDesc());
+        System.out.println(card.getTitle());
+        System.out.println(card.getDesc());
     }
 }

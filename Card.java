@@ -1,14 +1,16 @@
 public class Card {
     private String number;
+    private String title;
     private String desc;
     private String type;
     private String color;
     private String suit;
     private String rank;
     private String coloredText;
-    public Card(String number, String type, String desc) {
+    public Card(String number, String type , String title, String desc) {
         this.number = number;
         this.type = type;
+        this.title = title;
         this.desc = desc;
         setSuit();
         setColor();
@@ -44,6 +46,10 @@ public class Card {
 
     public String getNumber() {
         return this.number;
+    }
+
+    public String getTitle() {
+        return this.title;
     }
 
     public String getDesc() {
